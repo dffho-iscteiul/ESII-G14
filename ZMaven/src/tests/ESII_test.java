@@ -13,22 +13,14 @@ import main.ESII;
  */
 class ESII_test {
 
-	/** The test. */
-	private static ESII test;
-	
-	/**
-	 * Start.
-	 */
-	@BeforeAll
-	static void start() {
-		test = new ESII();
-	}
+	public ESII test;
 	
 	/**
 	 * Change.
 	 */
 	@Test
 	void change() {
+		test = new ESII();
 		assertEquals(0,test.a);
 		assertEquals(0,test.b);
 		test.change(10);
